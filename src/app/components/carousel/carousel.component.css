@@ -1,0 +1,17 @@
+.carousel__container {
+    height: 25vh;
+}
+
+@media screen and (min-width: 769px) {
+    .carousel__container {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .carousel__container {
+        height: 75vh;
+    }
+}
+
+

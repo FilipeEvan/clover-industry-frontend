@@ -1,0 +1,19 @@
+<div class="slider">
+    <div class="slider-buttons">
+        <div (click)="goToPrevious()" class="left-arrow">❰</div>
+        <div (click)="goToNext()" class="right-arrow">❱</div>
+    </div>
+    <div
+        class="slide"
+        [ngStyle]="{ 'background-image': getCurrentSlideUrl() }"
+    ></div>
+    <div class="slider-pagination">
+        <div
+            *ngFor="let slide of slides; let slideIndex = index"
+            class="dot"
+            (click)="goToSlide(slideIndex)"
+        >
+            ●
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<section id="highlight" class="highlight">
+    <h2 class="highlight__title">Em destaque</h2>
+    
+    <!-- {{ products | json }} -->
+    
+    <ul class="highlight__container">
+        <li class="highlight__item" *ngFor="let product of products; let i = index; let c = count;">
+            <img src="../../../assets/img/Highlight-2.svg" alt="Highlight {{ c }}">
+            <div class="highlight__description">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+            </div>
+        </li>
+    </ul>
+</section>

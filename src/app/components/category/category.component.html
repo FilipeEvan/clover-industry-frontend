@@ -1,0 +1,9 @@
+<section id="category" class="category">
+    <h2 class="category__title">Navegue pelas categorias</h2>
+    <ul class="category__container">
+        <li class="category__item" *ngFor="let category of categories;">
+            <img src="{{ category.url }}" alt="{{ category.title }}">
+            <h3>{{ category.title }}</h3>
+        </li>
+    </ul>
+</section>
